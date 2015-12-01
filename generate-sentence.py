@@ -1,5 +1,7 @@
 from PIL import Image, ImageDraw, ImageFont
-import os, string, sys
+import os
+import string
+import sys
 
 white = (255, 255, 255)
 
@@ -7,8 +9,8 @@ if len(sys.argv) == 3:
   fontName = sys.argv[1]
   fontSize = int(sys.argv[2])
 else:
-  print "Usage: python generate-sentence.py font-name font-size"
-  print "Example: python generate-sentence.py Helvetica 72"
+  print("Usage: python generate-sentence.py font-name font-size")
+  print("Example: python generate-sentence.py Helvetica 72")
   sys.exit()
 
 font = ImageFont.truetype("fonts/" + fontName + ".ttf", fontSize)

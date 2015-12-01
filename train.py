@@ -1,5 +1,8 @@
 from PIL import Image, ImageDraw, ImageFont
-import os, subprocess, string, sys
+import os
+import subprocess
+import string
+import sys
 
 white = (255, 255, 255)
 
@@ -54,8 +57,8 @@ def generatePixelMatrix(fontName, fontSize):
 if len(sys.argv) == 2:
   fontName = sys.argv[1]
 else:
-  print "Usage: python train.py font-name"
-  print "Example: python train.py Helvetica"
+  print("Usage: python train.py font-name")
+  print("Example: python train.py Helvetica")
   sys.exit()
 
 fontSize = 42

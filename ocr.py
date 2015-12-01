@@ -1,7 +1,9 @@
 from __future__ import division
 from PIL import Image, ImageDraw
-import os, sys, string
 from operator import itemgetter
+import os
+import sys
+import string
 
 white = (255, 255, 255)
 
@@ -179,9 +181,9 @@ def xnor(box, matrix):
 
   # Print the results
   if results[0][1] == 0:
-    print " "
+    print(" ")
   else:
-    print str(results[0][0]) + " - " + str(results[0][1] * 100) + "% sure"
+    print(str(results[0][0]) + " - " + str(results[0][1] * 100) + "% sure")
 
   return results
 
@@ -208,8 +210,8 @@ def readOCRMatrix(fontName):
 if len(sys.argv) == 2:
   filename = sys.argv[1]
 else:
-  print "Usage: python ocr.py filename"
-  print "Example: python ocr.py image.png"
+  print("Usage: python ocr.py filename")
+  print("Example: python ocr.py image.png")
   sys.exit()
 
 # Open the image to be read
@@ -230,4 +232,4 @@ boxes = mergeSpacesIntoBoxes(boxes, spaces, height)
 for box in boxes:
   result = xnor(box, matrix)
 
-print "---"
+print("---")

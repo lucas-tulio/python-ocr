@@ -11,7 +11,7 @@ Currently works with upper case characters and one line of text.
 
 #### Requirements
 
-- Python 2.7
+- Python 2.7 or 3.4+
 - Imagemagick
 - Python PIL
 
