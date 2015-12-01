@@ -4,7 +4,6 @@
 # Images
 characters/*.png
 fonts/*.*
-image.png
 
 # Apple, pls
 .DS_Store
